@@ -346,6 +346,14 @@ ul {
   background-size: cover;
 }
 
+.spacer3 {
+  aspect-ratio: 900/151;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .layer1 {
   background: url('images/layer-1.svg') 60% center/cover;
 }
@@ -353,6 +361,11 @@ ul {
 .layer2 {
   background: url('images/layer-2.svg') 60% center/cover;
 }
+
+.layer3 {
+  background: url('images/layer-3.svg') 60% center/cover;
+}
+
 /* /End of Design */
 
 /* Projects */
@@ -401,3 +414,10 @@ ul {
 }
 
 /* End of projects */
+
+.skills {
+  background-color: var(--primary-10);
+}
+.skills h1 {
+  text-align: center;
+}
