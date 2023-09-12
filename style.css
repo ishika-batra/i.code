@@ -394,9 +394,6 @@ ul {
 .project:hover {
   box-shadow: none;
 }
-.project:nth-child(even) .project-img {
-  order: 2;
-}
 
 .project-img {
   width: 430px;
@@ -407,6 +404,14 @@ ul {
 
 .project:nth-child(even) .project-card {
   order: 2;
+  justify-self: center;
+}
+
+.project:nth-child(odd) .project-info-container {
+  justify-self: self-end;
+}
+.project:nth-child(odd) .project-card {
+  justify-self: center;
 }
 
 .project-card {
@@ -432,16 +437,16 @@ ul {
 .project-tools {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  gap: 10px;
   align-items: center;
-  margin: 0.75rem auto;
-  max-width: 20rem;
+  margin: 0.75rem 0;
+  max-width: 40rem;
 }
 
 .project-tools span {
-  background: var(--primary-2);
+  background: var(--primary-3);
   color: var(--black);
-  padding: 0.2rem 0.35rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 4px;
   margin-top: 0.75rem;
   text-transform: uppercase;
@@ -514,14 +519,31 @@ ul {
 
 /* Contact */
 .contact {
-  background-image: url('images/contact-background.svg');
+  background-image: url('images/back.svg');
+  /* aspect-ratio: 960/458; */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 .contact-container {
-  height: 400px;
+  /* height: 400px; */
   padding: 30px 80px;
   place-items: center;
+  margin: 0 auto;
 }
+
+.contact-container h1 {
+  text-align: center;
+  padding-top: 300px;
+}
+
 .wrapper {
+  text-align: center;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  justify-content: center;
   display: inline-flex;
 }
 .wrapper .icon {
@@ -615,3 +637,10 @@ ul {
   background: #de463b;
 }
 /* Contact end */
+
+/* footer */
+.footer {
+  background: var(--black);
+  color: var(--white);
+}
+/* end of footer */
