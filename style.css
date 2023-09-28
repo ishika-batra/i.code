@@ -531,8 +531,14 @@ ul {
 }
 
 .single-skill {
-  background-color: var(--primary-7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  background-color: var(--primary-5);
   border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .skill-center {
