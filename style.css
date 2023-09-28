@@ -643,4 +643,19 @@ ul {
   background: var(--black);
   color: var(--white);
 }
+.footer-container {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-container p {
+  text-align: center;
+}
+.footer-container a {
+  color: var(--white);
+  text-decoration: underline;
+}
 /* end of footer */
