@@ -244,16 +244,21 @@ ul {
   justify-content: end;
 }
 
+.nav-links li {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
 .nav-links a {
   display: inline-block;
   color: var(--text-color-2);
   font-family: var(--text-style-1);
   font-size: 20px;
   letter-spacing: 2px;
-  padding: 2px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   font-weight: 500;
-  margin-right: 2px;
 }
 .nav-header {
   display: flex;
@@ -280,14 +285,15 @@ ul {
   content: '';
   position: absolute;
   background-color: var(--black);
-  height: 3px;
+  height: 2px;
   width: 0;
   left: 0;
   bottom: 0px;
+  transition: all 0.3 linear;
 }
 
 .navbar a:hover::after {
-  width: 100%;
+  width: 90%;
 }
 
 .menu-btn {
@@ -329,7 +335,6 @@ ul {
 }
 
 .btn {
-  height: 40px;
   text-transform: capitalize;
   font-weight: bold;
   text-align: center;
@@ -571,6 +576,7 @@ ul {
   margin: 0 auto;
   align-items: center;
   text-align: center;
+  padding-bottom: 90px;
 }
 
 .contact-container h1 {
@@ -644,7 +650,7 @@ ul {
   transform: translateX(-50%) rotate(45deg);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .icon:hover span {
+.wrapper .icon:hover span a {
   color: #fff;
 }
 .wrapper .icon:hover span,
@@ -661,10 +667,10 @@ ul {
 .wrapper .twitter:hover .tooltip:before {
   background: #46c1f6;
 }
-.wrapper .instagram:hover span,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip:before {
-  background: #e1306c;
+.wrapper .codepen:hover span,
+.wrapper .codepen:hover .tooltip,
+.wrapper .codepen:hover .tooltip:before {
+  background: #61d6c5;
 }
 .wrapper .github:hover span,
 .wrapper .github:hover .tooltip,
@@ -672,21 +678,11 @@ ul {
   background: #333;
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0.5;
-  }
-}
 .contact-btn {
-  height: 40px;
   text-transform: capitalize;
   font-weight: bold;
   text-align: center;
   color: var(--black);
-  animation: blink 2s linear infinite;
 }
 
 /* Contact end */
