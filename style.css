@@ -143,7 +143,7 @@ ul {
 .btn {
   display: inline-block;
   cursor: pointer;
-  background: var(--primary-5);
+  background: var(--primary-6);
   color: var(--white);
   border: transparent;
   border-radius: var(--borderRadius);
@@ -319,6 +319,7 @@ ul {
 .hero-container {
   height: 100vh;
   padding: 0px 80px;
+  transform: translateY(-2rem);
 }
 
 .hero-info {
@@ -345,7 +346,55 @@ ul {
   text-transform: capitalize;
   font-weight: bold;
   text-align: center;
-  color: var(--black);
+  color: #2f2e41;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-img {
+    display: none;
+  }
+  .hero-info {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .intro p,
+  .buttons {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .intro p {
+    font-size: medium;
+  }
+  .buttons {
+    margin-top: 40px;
+  }
+
+  .hero-container {
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .btn {
+    font-size: smaller;
+  }
+  .intro p {
+    font-size: 14px;
+  }
+  .hero-container {
+    padding: 20px;
+  }
 }
 
 /* end of hero */
@@ -529,6 +578,7 @@ ul {
   background-color: var(--primary-8);
 }
 .skills h1 {
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -605,6 +655,9 @@ ul {
   .single-skill {
     width: 80px;
     height: 80px;
+  }
+  .skills-container {
+    padding: 20px;
   }
 }
 
@@ -745,6 +798,9 @@ ul {
 
   .contact-btn {
     margin-bottom: 40px;
+  }
+  .contact-container {
+    padding: 20px;
   }
 }
 
