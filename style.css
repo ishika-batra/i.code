@@ -242,6 +242,7 @@ ul {
   justify-content: end;
   align-items: center;
   justify-content: end;
+  column-gap: 10px;
 }
 
 .nav-links li {
@@ -287,13 +288,14 @@ ul {
   background-color: var(--black);
   height: 2px;
   width: 0;
-  left: 0;
+  left: 50%;
   bottom: 0px;
-  transition: all 0.3 linear;
+  transform: translateX(-50%);
+  transition: all 0.3s linear;
 }
 
 .navbar a:hover::after {
-  width: 90%;
+  width: 70%;
 }
 
 .menu-btn {
